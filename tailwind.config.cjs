@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         'Boroto': ['Boroto', 'sans-serif']
       },
+      colors: {
+        'main': '#ff0000'
+      }
     },
   },
   plugins: [],
