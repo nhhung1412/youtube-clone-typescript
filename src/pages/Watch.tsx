@@ -1,7 +1,5 @@
 import React from 'react'
 
-export const Watch = () => {
-    return (
-        <div>Watch</div>
-    )
+export const Watch: React.FC = () => {
+  return <div>Watch</div>
 }

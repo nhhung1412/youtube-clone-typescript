@@ -6,6 +6,7 @@
 ::-webkit-scrollbar {
   background-color: transparent;
   width: 0.5rem;
+  height: 0;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #909090;
@@ -24,8 +25,19 @@ body {
 .active {
   background-color: #f2f2f2;
   border-radius: 12px;
+  font-weight: 600;
 }
 
 .active li span {
   opacity: 1;
+}
+
+.ct-category-items {
+  @apply px-3 py-2 mr-4 rounded-lg whitespace-nowrap w-max h-max;
+}
+
+.ct-title-video {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
