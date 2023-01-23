@@ -10,7 +10,11 @@ module.exports = {
         'Boroto': ['Boroto', 'sans-serif']
       },
       colors: {
-        'main': '#ff0000'
+        'main': '#ff0000',
+        'blue': '#1a73e8'
+      },
+      height: {
+        'header': '60px'
       }
     },
   },

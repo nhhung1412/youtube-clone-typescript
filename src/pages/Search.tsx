@@ -1,7 +1,5 @@
 import React from 'react'
 
-export const Search = () => {
-    return (
-        <div>Search</div>
-    )
+export const Search: React.FC = () => {
+  return <div>Search</div>
 }

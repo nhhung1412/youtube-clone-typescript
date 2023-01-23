@@ -116,7 +116,7 @@ export const youtubeLinks: Icon = [
   {
     icon: <SiYoutubemusic className="text-xl" />,
     name: 'YouTube Music',
-    path: '/music',
+    path: '/youtube-music',
   },
   {
     icon: <ImYoutube className="text-xl" />,

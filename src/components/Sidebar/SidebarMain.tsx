@@ -5,19 +5,19 @@ import {
   subscriptionLinks,
   textLinks,
   youtubeLinks,
-} from '../assets/linkIcon'
+} from '../../assets/iconLinks'
 import { NavLink } from 'react-router-dom'
 
-export const Sidebar = () => {
+export const SidebarMain: React.FC = () => {
   return (
-    <div className="w-2/12 bg-white overflow-auto sidebar">
+    <div>
       {/* main links sidebar */}
       <ul className="flex flex-col pb-3 border-b-2 bg-white px-3">
         {mainLinks.map(({ icon, name, path }) => (
-          <NavLink to={path}>
+          <NavLink to={path} key={name}>
             <li
               key={name}
-              className="pl-4 py-2 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
+              className="pl-4 py-3 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
             >
               <span className="opacity-50">{icon}</span>
               <span className="text-sm tracking-wider">{name}</span>
@@ -28,10 +28,10 @@ export const Sidebar = () => {
       {/* second link sidebar */}
       <ul className="flex flex-col py-3 border-b-2 bg-white px-3">
         {secondaryLinks.map(({ icon, name, path }) => (
-          <NavLink to={path}>
+          <NavLink to={path} key={name}>
             <li
               key={name}
-              className="pl-4 py-2 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
+              className="pl-4 py-3 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
             >
               <span className="opacity-50">{icon}</span>
               <span className="text-sm tracking-wider">{name}</span>
@@ -43,10 +43,10 @@ export const Sidebar = () => {
       <ul className="flex flex-col py-3 border-b-2 bg-white px-3">
         <h1 className="pl-3 py-1">Explore</h1>
         {subscriptionLinks.map(({ icon, name, path }) => (
-          <NavLink to={path}>
+          <NavLink to={path} key={name}>
             <li
               key={name}
-              className="pl-4 py-2 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
+              className="pl-4 py-3 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
             >
               <span className="opacity-50">{icon}</span>
               <span className="text-sm tracking-wider">{name}</span>
@@ -58,10 +58,10 @@ export const Sidebar = () => {
       <ul className="flex flex-col py-3 border-b-2 bg-white px-3">
         <h1 className="pl-3 py-1">More from YouTube</h1>
         {youtubeLinks.map(({ icon, name, path }) => (
-          <NavLink to={path}>
+          <NavLink to={path} key={name}>
             <li
               key={name}
-              className="pl-4 py-2 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
+              className="pl-4 py-3 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
             >
               <span className="text-main">{icon}</span>
               <span className="text-sm tracking-wider">{name}</span>
@@ -73,10 +73,10 @@ export const Sidebar = () => {
       <ul className="flex flex-col py-3 border-b-2 bg-white px-3">
         <h1 className="pl-3 py-1">Explore</h1>
         {helpLinks.map(({ icon, name, path }) => (
-          <NavLink to={path}>
+          <NavLink to={path} key={name}>
             <li
               key={name}
-              className="pl-4 py-2 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
+              className="pl-4 py-3 hover:bg-gray-100 flex items-center gap-5 rounded-xl"
             >
               <span className="opacity-50">{icon}</span>
               <span className="text-sm tracking-wider">{name}</span>
